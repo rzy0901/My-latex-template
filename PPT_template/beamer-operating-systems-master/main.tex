@@ -1,0 +1,67 @@
+\documentclass{beamer}      % This is a beamer
+\usepackage[utf8]{inputenc} % Language support
+\usepackage{utopia}         % Utopia Font
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+%------------------------------------------------------------
+%Title configuration block
+\title[Operating Systems]
+{Operating Systems}
+
+\subtitle{Beamer version 0.2}
+
+\author[Fabricio Bortoluzzi]
+{Fabricio Bortoluzzi\inst{1}}
+
+\institute[UNIVALI]
+{
+  \inst{1}
+  Computer Networks Laboratory\\
+  in collaboration with\\
+  Laboratory of Embedded and Distributed Systems\\
+}
+
+\date[UNIVALI 2019]
+{www.univali.br\\leds.acad.univali.br}
+
+%\logo{\includegraphics[height=1.5cm]{images/univali-logo.jpg}}
+
+%End of title configuration block
+%------------------------------------------------------------
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+\begin{document}
+%Create the title page.
+\frame{\titlepage}
+
+%---------------------------------------------------------
+%Table of Contents
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+\include{sections/1_introduction}
+\include{sections/2_memory_management}
+\include{sections/3_filesystems}
+\include{sections/4_input_output}
+\include{sections/5_deadlocks}
+
+%\include{main-examples}
+
+\end{document}

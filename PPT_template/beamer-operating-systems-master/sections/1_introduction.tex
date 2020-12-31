@@ -1,0 +1,184 @@
+\section{Introduction}
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Hardware review}
+    
+    \begin{itemize}
+        \item 
+        A modern  computer  consists  of  one  or  more
+        processors, some main  memory, disks,  printers,  
+        a  keyboard,  a  mouse, a  display,  
+        network  interfaces,  and  various other 
+        input/output devices.
+
+        \item 
+        All in all, a complex system.
+        
+        \item 
+        If every application programmer had to understand
+        how all these things work in detail,
+        no code would ever get written.
+
+    \end{itemize}    
+
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Wider definition of an Operating Systems}
+    
+    The operating system (OS) is a layer inserted 
+    between the hardware/software interface in order
+    to provide a 
+    \begin{itemize}
+        \item better
+        \item simpler
+        \item cleaner
+    \end{itemize} 
+    model of the computer.
+
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Hardware support}
+    
+    Hardware must give proper support for protection.
+    Minimal requirements are
+    \begin{itemize}
+        \item Processor Modes: Kernel and User
+        \item MMU: Memory Management Unit
+        \item I/O handling via interrupts
+    \end{itemize}
+
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Hardware support: Processor Modes}
+    
+    Processor Modes
+    \begin{figure}
+        \includegraphics[scale=0.5]{images/101.png}
+        \caption{The problem!}
+    \end{figure}
+    Continuing to processor mode
+
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Hardware support: MMU}
+    
+    MMU: Memory Management Unit
+    %\inputminted[c]{code/001.c}
+    
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Hardware support: I/O Interrupts}
+    
+    I/O Interrupts
+    
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{The shell is not the OS}
+    
+    Users interact with the shell, either via 
+    \begin{itemize}
+        \item a Text Console; and/or
+        \item the GUI - Graphical User Interface.
+    \end{itemize}
+
+\end{frame}
+%---------------------------------------------------------
+
+
+% INTRODUCTION QUIZ
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Quiz}
+    
+    \begin{itemize}
+        \item
+        1. What are the two main functions of an operating system?
+        \item
+        3. What is the difference between timesharing and multiprogramming systems?
+        \item
+        5. On early computers, e very byte of data read or written w as handled by the CPU (i.e.,
+        there was no DMA). What implications does this have for multiprogramming?
+    \end{itemize}    
+
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Quiz}
+
+        \begin{itemize}
+        \item
+        6. Instructions related to accessing I/O de vices are typically pri vileged instructions, that
+        is, they can be executed in kernel mode but not in user mode. Give a reason why these
+        instructions are privileged.
+        \item 
+        10. What is the difference between kernel and user mode? Explain how having two distinct
+        modes aids in designing an operating system.
+        \item 
+        12. Which of the following instructions should be allowed only in kernel mode?
+        (a) Disable all interrupts.
+        (b) Read the time-of-day clock.
+        (c) Set the time-of-day clock.
+        (d) Change the memory map.
+    \end{itemize}    
+
+\end{frame}
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Quiz}
+    
+    \begin{itemize}
+        \item 
+        17. What is a trap instruction? Explain its use in operating systems.
+        \item 
+        25. What is the essential dif ference between a block special f ile and a character special
+        file?
+        \item
+        27. Modern operating systems decouple a process address space from the machine’s physi-
+        cal memory. List two advantages of this design.
+    \end{itemize}    
+
+\end{frame}
+%---------------------------------------------------------  
+
+%---------------------------------------------------------
+\begin{frame}
+    \frametitle{Quiz}
+    
+    \begin{itemize}
+        \item
+        29. Figure 1-23 sho ws that a number of UNIX system calls ha ve no Win32 API equi v-
+        alents. For each of the calls listed as ha ving no Win32 equivalent, what are the conse-
+        quences for a programmer of converting a UNIX program to run under Windows?
+        \item
+        30. A portable operating system is one that can be ported from one system architecture to
+        another without any modification. Explain why it is infeasible to build an operating
+        system that is completely portable. Describe two high-level layers that you will have in
+        designing an operating system that is highly portable.
+    \end{itemize}    
+
+\end{frame}
+%---------------------------------------------------------
